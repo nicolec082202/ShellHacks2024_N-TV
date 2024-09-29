@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-
+var ID;
 
 function ShelterSignUpForm() {
   // Step 2: Define state variables for each input field
@@ -16,7 +16,18 @@ function ShelterSignUpForm() {
 
     // Perform form submission logic (e.g., send data to an API)
     console.log('Form submitted: ', { shelterName, shelterAddress, identificationNumber });
- 
+    ID = identificationNumber;
+    const newShelter = Shelter.build({
+      shelterName : shelterName,
+      shelterAddress : shelterAddress,
+      shelterId : identificationNumber,
+      toiletriesGoal : '0',
+      foodGoal : '0',
+      clothesGoal : '0',
+      toiletriesDonated : '0',
+      foodDonated : '0',
+      clothesDonated : '0',
+    })
     navigate('/SetGoals');
 
 };

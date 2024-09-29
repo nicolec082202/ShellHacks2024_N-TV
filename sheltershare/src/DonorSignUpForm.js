@@ -17,7 +17,13 @@ function DonorSignUpForm() {
 
     // Perform form submission logic (e.g., send data to an API)
     console.log('Form submitted: ', { name, email, address, password });
-
+    const newDonor = Donator.build ({
+      name : name,
+      clothesDonated : '0',
+      foodDonated : '0',
+      toiletriesDonated : '0',
+    });
+    newDonor.save();
     navigate('/DonorHomePage');
 
 };
