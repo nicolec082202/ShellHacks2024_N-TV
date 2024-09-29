@@ -8,6 +8,8 @@ import DonorHomePage from './DonorHomePage';
 import ShelterHomePage from './ShelterHomePage';
 import ShelterSignInPage from './ShelterSignInPage';
 import DonorSignInPage from './DonorSignInPage';
+import RequestItemsPage from './RequestItemsPage';
+import IncomingDonationsPage from './IncomingDonationsPage';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/ShelterSignIn" element={<ShelterSignInPage/>} />
         <Route path="/DonorHomePage" element={<DonorHomePage/>} />
         <Route path="/ShelterHomePage" element={<ShelterHomePage/>} />
+        <Route path="/RequestItems" element={<RequestItemsPage/>} />
+        <Route path="/IncomingDonation" element={<IncomingDonationsPage/>} />
 
         </Routes>
     </div>

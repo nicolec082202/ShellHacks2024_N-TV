@@ -1,0 +1,21 @@
+/* Progress container */
+.progress-container {
+    width: 100%;       /* Full width */
+    background-color: #e0e0df; /* Background for the container */
+    border-radius: 20px;
+    margin: 20px 0;
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  /* Progress bar itself */
+  .progress-bar {
+    height: 100%;
+    background-color: #76c7c0; /* Color for the progress */
+    text-align: center;
+    line-height: 30px; /* Align text vertically */
+    color: white;
+    border-radius: 20px; /* Rounded corners */
+    transition: width 0.5s ease; /* Smooth transition */
+  }
+  
