@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "react-router-dom": "^6.26.2"
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "react-router-dom": "^6.26.2",
+    "sequelize": "^6.37.3"
   }
 }
