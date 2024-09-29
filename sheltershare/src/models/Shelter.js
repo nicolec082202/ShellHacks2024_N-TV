@@ -8,33 +8,31 @@ const Shelter  = sequelize.define('Shelter', {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    shelterAddress: {
+        type: DataTypes.STRING,
+        allowNUll: false,
+    },
     shelterId:  {
         type: DataTypes.INTEGER,
         allowNull: false,
     },
     toiletriesGoal: {
-        type: DataTypes.INTEGER,
-        allowNull: true,        
+        type: DataTypes.INTEGER,       
     },
     toiletriesDonated: {
-        type: DataTypes.INTEGER,
-        allowNull: true,        
+        type: DataTypes.INTEGER,        
     },
     foodGoal: {
-        type: DataTypes.INTEGER,
-        allowNull: true,        
+        type: DataTypes.INTEGER,      
     },
     foodDonated: {
-        type: DataTypes.INTEGER,
-        allowNull: true,        
+        type: DataTypes.INTEGER,       
     },
     clothesGoal: {
-        type: DataTypes.INTEGER,
-        allowNull: true,        
+        type: DataTypes.INTEGER,       
     },
     clothesDonated: {
-        type: DataTypes.INTEGER,
-        allowNull: true,        
+        type: DataTypes.INTEGER,       
     },
 });
 module.exports = Shelter;
