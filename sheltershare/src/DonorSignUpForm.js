@@ -79,7 +79,7 @@ function DonorSignUpForm() {
         <button type="submit">Submit</button>
       </form>
 
-      <button onClick={() => navigate('/DonorSignIn')}>Already have an account? Sign In</button>
+      <button onClick={() => navigate('/DonorHomePage')}>Already have an account? Sign In</button>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function ShelterSignUpForm() {
     // Perform form submission logic (e.g., send data to an API)
     console.log('Form submitted: ', { shelterName, shelterAddress, identificationNumber });
  
-    navigate('/ShelterHomePage');
+    navigate('/SetGoals');
 
 };
 

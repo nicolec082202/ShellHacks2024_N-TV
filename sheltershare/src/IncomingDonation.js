@@ -8,15 +8,15 @@ function IncomingDonation({ onSubmit }) {
   // Function to handle the 'Accept' button click
   const handleAccept = () => {
     // Set values for the donations (you can set them dynamically if needed)
-    setFoodDonated(100);  // Example: 100 units of food donated
-    setClothingDonated(50); // Example: 50 units of clothing donated
-    setToiletDonated(20); // Example: 20 units of toilet items donated
+    setFoodDonated(0);  // Example: 100 units of food donated
+    setClothingDonated(0); // Example: 50 units of clothing donated
+    setToiletDonated(0); // Example: 20 units of toilet items donated
 
     // Call onSubmit with the updated values
     onSubmit({
-      foodDonated: 100,
-      clothingDonated: 50,
-      toiletDonated: 20
+      foodDonated: 0,
+      clothingDonated: 0,
+      toiletDonated: 0
     });
   };
 

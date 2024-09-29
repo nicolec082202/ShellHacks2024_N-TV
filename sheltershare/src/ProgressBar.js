@@ -1,37 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ProgressBar.css';
 
-function ProgressBar({ incrementValue, decrementValue }) {
-  const [progress, setProgress] = useState(0);
-
-  // Function to increase progress based on incrementValue
-  const increaseProgress = () => {
-    if (progress + incrementValue <= 100) {
-      setProgress(progress + incrementValue);
-    } else {
-      setProgress(100); // Cap at 100%
-    }
-  };
-
-  // Function to decrease progress based on decrementValue
-  const decreaseProgress = () => {
-    if (progress - decrementValue >= 0) {
-      setProgress(progress - decrementValue);
-    } else {
-      setProgress(0); // Cap at 0%
-    }
-  };
+function ProgressBar({ donated, goal, label }) {
+  const progressPercentage = goal > 0 ? Math.min((donated / goal) * 100, 100) : 0;
 
   return (
     <div>
+      <h3>{label}</h3>
       <div className="progress-container">
-        <div className="progress-bar" style={{ width: `${progress}%` }}>
-          {progress}%
+        <div className="progress-bar" style={{ width: `${progressPercentage}%` }}>
+          {progressPercentage.toFixed(2)}% ({donated} / {goal})
         </div>
       </div>
-
-      {/* Buttons to increase and decrease progress */}
-     
     </div>
   );
 }

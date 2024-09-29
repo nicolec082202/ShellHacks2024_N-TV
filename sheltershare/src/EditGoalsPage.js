@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
-function RequestItemsPage({onSubmit}){
+function EditGoalsPage({onSubmit}){
 
     const [foodGoal, setFoodGoal] = useState(0);
     const [clothingGoal, setClothingGoal] = useState(0);
@@ -13,9 +13,7 @@ function RequestItemsPage({onSubmit}){
     const handleSubmit = (e) => {
         e.preventDefault();
         // Call the onSubmit function passed as props with the updated values
-        onSubmit(foodGoal);
-        onSubmit(clothingGoal);
-        onSubmit(toiletGoal);
+        onSubmit(foodGoal, clothingGoal, toiletGoal);
       };
     
       return (
@@ -80,5 +78,5 @@ function RequestItemsPage({onSubmit}){
       );
 }
 
-export default RequestItemsPage;
+export default EditGoalsPage;
 

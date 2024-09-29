@@ -13,11 +13,17 @@ return(
 
     <div>
 
+      <div>
+
+        <h1>Donations Dashboard</h1>
+
+      </div>
+
         <div>
 
         <Button
-          text="Request Items"
-          onClick={() => navigate('/RequestItems')} // Use navigate to go to /about
+          text="Edit Goals"
+          onClick={() => navigate('/EditGoals')} // Use navigate to go to /about
         />
 
         <Button
